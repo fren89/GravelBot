@@ -1,4 +1,1 @@
-import discord
-import datetime
-import time
-import random
+discord.py == 0.16.2
