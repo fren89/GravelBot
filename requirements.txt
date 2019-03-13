@@ -1,2 +1,4 @@
-requirements.txt
-discord.py==0.16.12
+import discord
+import datetime
+import time
+import random
