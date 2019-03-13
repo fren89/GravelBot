@@ -2,6 +2,7 @@ import discord
 import datetime
 import time
 import random
+import os
 
 client = discord.Client()
 
@@ -130,5 +131,5 @@ async def on_member_join(member):
     fmt = '{0.mention} 라고 새로 들어왔는데 관심좀 줘라'
     channel = member.server.get_channel("548630235008991252")
     await client.send_message(channel, fmt.format(member, member.server))
-
-client.run("NTUxMTI1NzIxMjQyOTI3MTIy.D2Hg8A.j0c9t50Eqy5rfv_y7YwQUp8OTls")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
