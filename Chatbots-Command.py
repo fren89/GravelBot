@@ -9,7 +9,7 @@ PREFIX = ""
 async def on_ready():
   print("Ready the Bots!")
   game = discord.Game(name="")
-  await client.chage_persence(status=discord.Status.online,activity=game)
+  await client.change_presence(status=discord.Status.online,activity=game)
 
 @client.event
 async def on_message(message):
